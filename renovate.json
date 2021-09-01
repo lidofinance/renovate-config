@@ -1,0 +1,6 @@
+{
+  "extends": ["config:base", "schedule:weekdays"],
+  "stabilityDays": 2,
+  "prCreation": "not-pending",
+  "timezone": "Europe/Moscow"
+}
