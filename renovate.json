@@ -1,5 +1,9 @@
 {
-  "extends": ["config:base", "schedule:weekdays"],
+  "extends": [
+    "config:base",
+    "schedule:weekdays",
+    ":disableDependencyDashboard"
+  ],
   "stabilityDays": 2,
   "prCreation": "not-pending",
   "timezone": "Europe/Moscow"
