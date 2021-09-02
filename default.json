@@ -1,10 +1,7 @@
 {
-  "extends": [
-    "config:base",
-    "schedule:weekdays",
-    ":disableDependencyDashboard"
-  ],
+  "extends": ["config:base", ":disableDependencyDashboard"],
   "stabilityDays": 2,
   "prCreation": "not-pending",
-  "timezone": "UTC"
+  "timezone": "UTC",
+  "schedule": ["after 10am every weekday", "before 9pm every weekday"]
 }
