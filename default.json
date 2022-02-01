@@ -3,5 +3,5 @@
   "stabilityDays": 2,
   "prCreation": "not-pending",
   "timezone": "UTC",
-  "schedule": ["after 10am every weekday", "before 9pm every weekday"]
+  "schedule": ["after 9am every weekday", "before 3pm every weekday"]
 }
