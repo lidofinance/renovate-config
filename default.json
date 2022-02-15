@@ -4,5 +4,9 @@
   "prCreation": "not-pending",
   "timezone": "UTC",
   "schedule": ["after 10am every weekday", "before 9pm every weekday"],
-  "labels": ["dependencies"]
+  "labels": ["dependencies"],
+  "vulnerabilityAlerts": {
+    "enabled": true,
+    "labels": ["security"]
+  }
 }
