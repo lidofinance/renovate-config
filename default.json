@@ -1,7 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base", ":disableDependencyDashboard"],
-  "stabilityDays": 2,
+  "stabilityDays": 5,
   "prCreation": "not-pending",
   "timezone": "UTC",
   "schedule": ["after 10am every weekday", "before 9pm every weekday"],
