@@ -11,5 +11,31 @@
     "labels": ["security"]
   },
   "prConcurrentLimit": 5,
-  "prHourlyLimit": 2
+  "prHourlyLimit": 2,
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["@lido-sdk/*"],
+      "groupName": "all lido-sdk packages",
+      "groupSlug": "lido-sdk"
+    },
+    {
+      "matchPackagePatterns": ["@ethersproject/*"],
+      "groupName": "all ethers packages",
+      "groupSlug": "ethersproject"
+    },
+    {
+      "matchPackagePatterns": ["@types/*"],
+      "groupName": "all types packages",
+      "groupSlug": "types"
+    },
+    {
+      "matchPackagePatterns": ["eslint"],
+      "groupName": "eslint"
+    },
+    {
+      "matchDepTypes": ["devDependencies"],
+      "groupName": "all dev dependencies",
+      "groupSlug": "all-dev-dependencies"
+    }
+  ]
 }
