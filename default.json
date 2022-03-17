@@ -1,41 +1,9 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base", ":disableDependencyDashboard"],
-  "stabilityDays": 5,
-  "prCreation": "not-pending",
-  "timezone": "UTC",
-  "schedule": ["after 9am every weekday", "before 4pm every weekday"],
-  "labels": ["dependencies"],
-  "vulnerabilityAlerts": {
-    "enabled": true,
-    "labels": ["security"]
-  },
-  "prConcurrentLimit": 5,
-  "prHourlyLimit": 2,
   "packageRules": [
     {
-      "matchPackagePatterns": ["@lido-sdk/*"],
-      "groupName": "all lido-sdk packages",
-      "groupSlug": "lido-sdk"
-    },
-    {
-      "matchPackagePatterns": ["@ethersproject/*"],
-      "groupName": "all ethers packages",
-      "groupSlug": "ethersproject"
-    },
-    {
-      "matchPackagePatterns": ["@types/*"],
-      "groupName": "all types packages",
-      "groupSlug": "types"
-    },
-    {
-      "matchPackagePatterns": ["eslint"],
-      "groupName": "eslint"
-    },
-    {
-      "matchDepTypes": ["devDependencies"],
-      "groupName": "all dev dependencies",
-      "groupSlug": "all-dev-dependencies"
+      "packagePatterns": ["*"],
+      "enabled": false
     }
   ]
 }
